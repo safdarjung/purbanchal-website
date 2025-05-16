@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from services.models import Service, Testimonial
+from purbanchal_roadways.services.models import Service, Testimonial
 from contact.models import Branch
 
 def home(request):
