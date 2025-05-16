@@ -36,9 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'purbanchal_roadways.core',
-    'purbanchal_roadways.services',
-    'purbanchal_roadways.contact',
+    'core',
+    'services',
+    'contact',
 ]
 
 MIDDLEWARE = [
