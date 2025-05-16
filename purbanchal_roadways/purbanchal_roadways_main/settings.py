@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 # Point to the correct URLconf module for repo-root deployment
-ROOT_URLCONF = 'purbanchal_roadways.purbanchal_roadways_main.urls'
+ROOT_URLCONF = 'purbanchal_roadways_main.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'purbanchal_roadways.wsgi.application'
+WSGI_APPLICATION = 'purbanchal_roadways_main.wsgi.application'
 
 
 # Database
