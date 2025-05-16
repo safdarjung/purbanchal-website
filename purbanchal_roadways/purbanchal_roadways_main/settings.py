@@ -26,7 +26,8 @@ SECRET_KEY = env('SECRET_KEY', default="change me")
 
 DEBUG = env('DEBUG', default=False)
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
+# Allow Render host
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['.onrender.com'])
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,7 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'purbanchal_roadways.urls'
+# Point to the correct URLconf module
+ROOT_URLCONF = 'purbanchal_roadways_main.urls'
 
 TEMPLATES = [
     {
