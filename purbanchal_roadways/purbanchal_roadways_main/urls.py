@@ -22,9 +22,9 @@ admin.site.index_title = "Welcome to PURBANCHAL ROADWAYS Portal"
 from django.conf import settings
 from django.conf.urls.static import static
 
-from purbanchal_roadways.core import views as core_views
-from purbanchal_roadways.services import views as service_views
-from purbanchal_roadways.contact import views as contact_views
+from core import views as core_views
+from services import views as service_views
+from contact import views as contact_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
