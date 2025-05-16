@@ -52,8 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Point to the correct URLconf module
-ROOT_URLCONF = 'purbanchal_roadways_main.urls'
+# Point to the correct URLconf module for repo-root deployment
+ROOT_URLCONF = 'purbanchal_roadways.purbanchal_roadways_main.urls'
 
 TEMPLATES = [
     {
