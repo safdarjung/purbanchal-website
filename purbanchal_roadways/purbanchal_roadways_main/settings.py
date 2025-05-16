@@ -26,8 +26,8 @@ SECRET_KEY = env('SECRET_KEY', default="change me")
 
 DEBUG = env('DEBUG', default=False)
 
-# Allow Render host
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['.onrender.com'])
+# Allow Render host and localhost
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['purbanchal-website.onrender.com', 'localhost', '127.0.0.1'])
 
 INSTALLED_APPS = [
     'django.contrib.admin',
