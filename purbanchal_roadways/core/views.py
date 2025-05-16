@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from purbanchal_roadways.services.models import Service, Testimonial
-from contact.models import Branch
+from purbanchal_roadways.contact.models import Branch
 
 def home(request):
     featured_services = Service.objects.filter(is_featured=True)
