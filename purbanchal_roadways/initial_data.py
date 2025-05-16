@@ -1,7 +1,7 @@
 import os
 import django
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'purbanchal_roadways.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'purbanchal_roadways_main.settings')
 django.setup()
 
 from services.models import Service, Testimonial
