@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 WHITENOISE_AUTOREFRESH = DEBUG
-WHITENOISE_USE_FINDERS = DEBUG  # Only use finders in development
+WHITENOISE_USE_FINDERS = False  # Only use finders in development
 
 MEDIA_URL = env.str('MEDIA_URL', default='/media/')
 MEDIA_ROOT = env.str('MEDIA_ROOT', default=os.path.join(BASE_DIR, 'media'))
