@@ -126,7 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = env.str('STATIC_URL', default='/static/')
-STATIC_ROOT = env.str('STATIC_ROOT', default=os.path.join(BASE_DIR, 'staticfiles'))
+# STATIC_ROOT = env.str('STATIC_ROOT', default=os.path.join(BASE_DIR, 'staticfiles'))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 WHITENOISE_AUTOREFRESH = DEBUG
 WHITENOISE_USE_FINDERS = True
 
