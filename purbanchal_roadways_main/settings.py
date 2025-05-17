@@ -128,6 +128,9 @@ USE_TZ = True
 STATIC_URL = env.str('STATIC_URL', default='/static/')
 # STATIC_ROOT = env.str('STATIC_ROOT', default=os.path.join(BASE_DIR, 'staticfiles'))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 WHITENOISE_AUTOREFRESH = DEBUG
 WHITENOISE_USE_FINDERS = True
 
