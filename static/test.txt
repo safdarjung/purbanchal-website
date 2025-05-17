@@ -1,0 +1,2 @@
+This is a static file health check.
+If you see this file in your browser, static file serving is working.

@@ -24,7 +24,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 SECRET_KEY = env('SECRET_KEY', default="change me")
 
-DEBUG = env('DEBUG', default=False)
+DEBUG = True  # TEMP: Enable Django static serving for debugging
 
 # Allow Render host and localhost
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['purbanchal-website.onrender.com', 'localhost', '127.0.0.1'])
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',  # TEMP: Disable WhiteNoise for debugging
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
