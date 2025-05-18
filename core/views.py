@@ -52,3 +52,6 @@ def payment(request):
 
 def learn_more(request):
     return render(request, 'core/learn_more.html')
+
+def careers(request):
+    return render(request, 'core/careers.html')

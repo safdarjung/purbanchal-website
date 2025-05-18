@@ -42,6 +42,7 @@ urlpatterns = [
     path('custom-quote/', core_views.custom_quote, name='custom_quote'),
     path('payment/', core_views.payment, name='payment'),
     path('learn-more/', core_views.learn_more, name='learn_more'),
+    path('careers/', core_views.careers, name='careers'),
 ]
 
 if settings.DEBUG:

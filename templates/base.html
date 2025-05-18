@@ -74,6 +74,9 @@
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/careers/' %}active{% endif %}" href="{% url 'careers' %}">Careers</a>
+                        </li>
                         <li class="nav-item ms-2">
                             <a class="nav-link btn btn-sm btn-primary text-white px-3 {% if request.path == '/custom-quote/' %}active{% endif %}" href="{% url 'custom_quote' %}">Get Quote</a>
                         </li>
@@ -164,7 +167,7 @@
                                 <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
                                 <li><a href="{% url 'terms_of_service' %}">Terms of Service</a></li>
                                 <li><a href="{% url 'faq' %}">FAQ</a></li>
-                                <li><a href="{% url 'contact' %}">Careers</a></li>
+                                <li><a href="{% url 'careers' %}">Careers</a></li>
                             </ul>
                         </div>
                     </div>
