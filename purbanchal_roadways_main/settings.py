@@ -27,7 +27,11 @@ SECRET_KEY = env('SECRET_KEY', default="change me")
 DEBUG = True  # TEMP: Enable Django static serving for debugging
 
 # Allow Render host and localhost
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['purbanchal-website.onrender.com', 'localhost', '127.0.0.1'])
+ALLOWED_HOSTS = [
+    'purbanchalroadway.com',
+    'www.purbanchalroadway.com',
+    'purbanchal-website.onrender.com'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
